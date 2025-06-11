@@ -1,10 +1,21 @@
 def show_instructions():
-    print("""
-Welcome to the Recipe Cost Calculator!
-You will enter ingredients one by one.
-Enter 'xxx' as the ingredient name to finish.
-All costs are calculated per recipe and per serving.
-""")
+    print('''
+
+This program helps you calculate the total cost of a recipe.
+
+For each ingredient, enter:
+- The name of the ingredient
+- The amount required for the recipe (in grams, ml, or units)
+- The amount purchased and its cost (e.g., 500g for $4.00)
+
+The program will calculate the cost of the amount used
+in the recipe, and at the end, it will total the cost
+of all ingredients.
+
+To stop adding ingredients, enter the exit code ('xxx') 
+when prompted for the ingredient name.
+
+    ''')
 
 def show_results(recipe_name, servings, total_cost):
     cost_per_serving = total_cost / servings if servings > 0 else 0
